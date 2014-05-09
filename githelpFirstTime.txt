@@ -26,11 +26,13 @@
 
 
 8. git push TrynTest
-
+*************
 9. Changed one file and need to push the changes, use following command by skipping staging
 	git commit -a -m "modified help file"
 	
-
+	then need to push it again 
+	git push TrynTest
+********
 10. To remove the files: git rm filename.txt
 	git rm grit.gemspec 
 	
