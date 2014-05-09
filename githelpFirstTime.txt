@@ -1,0 +1,43 @@
+1. create a repository in github.com
+	do not put readme file while creating the repo
+
+2. use powershell and setup git config by using commands below
+	git config --global user.name "kshri"
+	git config --global user.email "k.shrikk9@*.com"
+
+3. go to the project location in powershell and type following
+	git init
+
+4. setup remote
+	git remote add <name> <url>
+	for example:
+	git remote add TrynTest https://github.com/kshri/TrynTest.git
+
+
+5. Setup upstream by using following command
+	git push --set-upstream TrynTest master
+
+	This should ask for user name and password
+
+6. go to src-> package folders and run following
+	git add *.java
+
+7. git commit -m "Initial Push to the repo java files"
+
+
+8. git push TrynTest
+
+
+
+
+========
+Create the text file gitignore.txt
+Open it in a text editor and add your rules, then save and close
+Hold SHIFT, right click the folder you're in, then select Open command window here
+Then rename the file in the command line, with ren gitignore.txt .gitignore
+
+e.g. add below to gitignore
+
+*.class
+bin/
+*.classpath
