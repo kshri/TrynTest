@@ -27,9 +27,13 @@
 
 8. git push TrynTest
 
+9. Changed one file and need to push the changes, use following command by skipping staging
+	git commit -a -m "modified help file"
+	
 
-
-
+10. To remove the files: git rm filename.txt
+	git rm grit.gemspec 
+	
 ========
 Create the text file gitignore.txt
 Open it in a text editor and add your rules, then save and close
@@ -41,3 +45,29 @@ e.g. add below to gitignore
 *.class
 bin/
 *.classpath
+
+
+=======
+added more files example
+C:\Users\skulkarni\Documents\Shri\MyProjects\TrynTest [master +8 ~0 -0 !]> git push TrynTest
+Everything up-to-date
+C:\Users\skulkarni\Documents\Shri\MyProjects\TrynTest [master +8 ~0 -0 !]> git add lib/*.*
+C:\Users\skulkarni\Documents\Shri\MyProjects\TrynTest [master +2 ~0 -0 | +7 ~0 -0 !]> git add .gitignore
+C:\Users\skulkarni\Documents\Shri\MyProjects\TrynTest [master +3 ~0 -0 | +6 ~0 -0 !]> git add .project
+C:\Users\skulkarni\Documents\Shri\MyProjects\TrynTest [master +4 ~0 -0 | +5 ~0 -0 !]> git add src/my.uml
+C:\Users\skulkarni\Documents\Shri\MyProjects\TrynTest [master +5 ~0 -0 | +4 ~0 -0 !]> git add githelpFirstTime.txt
+C:\Users\skulkarni\Documents\Shri\MyProjects\TrynTest [master +6 ~0 -0 | +3 ~0 -0 !]> git commit -m "Project properties
+files and jars with other files"
+[master 29ab527] Project properties files and jars with other files
+ 6 files changed, 67 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 .project
+ create mode 100644 githelpFirstTime.txt
+ create mode 100644 lib/Locale.properties
+ create mode 100644 lib/mysql-connector-java-5.1.25-bin.jar
+ create mode 100644 src/my.uml
+C:\Users\skulkarni\Documents\Shri\MyProjects\TrynTest [master +3 ~0 -0 !]> git push TrynTest
+=============
+help link
+https://help.github.com/articles/create-a-repo
+http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository
